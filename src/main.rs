@@ -174,7 +174,7 @@ fn decompose2(data: &[u8], buf: &mut Vec<u32>) -> Result<(), &'static str> {
 }
 
 fn main() {
-    let path = Path::new(r"C:\Users\sumiy\Desktop\work\simple16\data\index-all.nozomi");
+    let path = Path::new(r"\data\all.bin");
     let mut data = Vec::new();
     let start = std::time::Instant::now();
     fs::read(path).unwrap().chunks_exact(4).for_each(|chunk| {
